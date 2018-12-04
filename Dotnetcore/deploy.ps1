@@ -11,4 +11,4 @@ $additionalParams.Set_Item('MsDeployPackageUrl',$MsDeployPackageUrl)
 Login-AzureRmAccount
 
 New-AzureRmResourceGroup -Name $DeploymentId -Location $Location
-New-AzureRmResourceGroupDeployment -Name $DeploymentId -ResourceGroupName $DeploymentId -TemplateFile $TemplateFile
+New-AzureRmResourceGroupDeployment -Name $DeploymentId -ResourceGroupName $DeploymentId -TemplateFile $TemplateFile -TemplateParameterObject $additionalParams
