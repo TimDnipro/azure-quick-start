@@ -1,13 +1,20 @@
-# How to run
-1. Configure following parameters in deploy.ps1 file
+## Deploy web application to Azure App Service
+# How To Deploy
+
+1. Configure *azuredeploy.parameters.json* with the parameters
 
 |Parameter name|Description|
 | ------------- | ------------- |
-|DeploymentId|The name of your deployment|
-|TemplateFile|A path to azuredeploy.json template|
 |MsDeployPackageUrl|Web Deploy package for application|
-|Location|The geographical region of the current resource group|
+|Location |The geographical region of the current resource (not mandatoty)|
+|serverfarmName|The name of hosting plan (not mandatoty)| 
+|webappName| The name of Azure App Service (not mandatory)|
 
-2. Run deploy.ps1 or deploy.bat
+2. Run *deploy.ps1* and specify the parameters in it.
 
-3. It works :thumbsup:
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/TimDnipro/azure-quick-start/master/Dotnetcore/azuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+<a href="http://armviz.io/#/?load=https://raw.githubusercontent.com/TimDnipro/azure-quick-start/master/Dotnetcore/azuredeploy.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+</a>

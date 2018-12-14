@@ -1,14 +1,13 @@
-$DeploymentId = "" 
-$TemplateFile = ""
-$MsDeployPackageUrl = ""
-$Location = ""
-
-
-$additionalParams = New-Object -TypeName Hashtable
-$additionalParams.Set_Item('webAppName',$DeploymentId)
-$additionalParams.Set_Item('MsDeployPackageUrl',$MsDeployPackageUrl)
+$ResourceGroupName = "TestGroup"
+$WebAppName = "aspnetcore"
+$ResourceGroupLocation = "West US" 
+$TemplateFile = "C:\tmp\azure-quick-start\Dotnetcoretemplate\azuredeploy.json"
+$TemplateParameterFilePath ="C:\tmp\azure-quick-start\Dotnetcoretemplate\azuredeploy.parameters.json"
 
 Login-AzureRmAccount
 
-New-AzureRmResourceGroup -Name $DeploymentId -Location $Location
-New-AzureRmResourceGroupDeployment -Name $DeploymentId -ResourceGroupName $DeploymentId -TemplateFile $TemplateFile -TemplateParameterObject $additionalParams
+New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation
+
+New-AzureRmResourceGroupDeployment -Name $WebAppName -ResourceGroupName $ResourceGroupName `
+-TemplateFile $TemplateFile -TemplateParameterFile $TemplateParameterFilePath `
+-Verbose

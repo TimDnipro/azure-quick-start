@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "East US"
+        },
+        "serverfarmName": {
+            "value": "myHosting"
+        },
+        "webappName": {
+            "value": "myWebApp"
+        },
+        "MsDeployPackageUrl": {
+            "value": "https://myteststorageaccount3.blob.core.windows.net/mytestblob/aspnetcoreapp.zip?sp=r&st=2018-12-13T11:36:32Z&se=2019-12-13T19:36:32Z&spr=https&sv=2018-03-28&sig=0mjZOb%2FFhHZ9dQLDIfCS%2Fgjv5ITiM5OeGzYb8XTycE0%3D&sr=b"
+        }
+    }
+}
