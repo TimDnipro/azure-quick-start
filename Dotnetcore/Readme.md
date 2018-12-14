@@ -12,9 +12,9 @@
 
 2. Run *deploy.ps1* and specify the parameters in it.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/TimDnipro/azure-quick-start/master/Dotnetcore/azuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2TimDnipro%2azure-quick-start%2master%2Dotnetcore%2azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https://raw.githubusercontent.com/TimDnipro/azure-quick-start/master/Dotnetcore/azuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2raw.githubusercontent.com%2TimDnipro%2azure-quick-start%2master%2Dotnetcore%2azuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
